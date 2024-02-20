@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Grayscale v7.0.6 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -310,6 +300,7 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  
 }
 
 table {
@@ -604,6 +595,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  
 }
 
 .img-thumbnail {
@@ -678,6 +670,7 @@ progress {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  
 }
 .row > * {
   flex-shrink: 0;
@@ -3854,8 +3847,8 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-navbar-color);
-  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+  --bs-nav-link-color: #e4c662;
+  --bs-nav-link-hover-color: #bd9103;
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
   display: flex;
   flex-direction: column;
@@ -3874,7 +3867,7 @@ textarea.form-control-lg {
 .navbar-text {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: var(--bs-navbar-color);
+  color: #110f07;
 }
 .navbar-text a,
 .navbar-text a:hover,
@@ -8247,7 +8240,8 @@ textarea.form-control-lg {
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #d0e1d9 !important;
+
 }
 
 .text-reset {
@@ -10984,10 +10978,10 @@ body {
   background-color:#999999;
 }
 #mainNav .navbar-toggler {
-  font-size: 80%;
+  font-size: 110%;
   padding: 0.75rem;
-  color: #DCDCDC;
-  border: 1px solid #64a19d;
+  color: #e4c662;
+  border: 3px #e4c662;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11065,16 +11059,24 @@ body {
 }
 
 .masthead {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/onda\ cinza.jpg");
+
+
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: #000;
+  background-image: url(../assets/img/escritorio\ cappeu\ \(1\).png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: 100%;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 25rem;
+  padding: 0rem 0;
+  
+ 
+
 }
 .masthead h1, .masthead .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11113,11 +11115,22 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  padding-top: 15rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), #000 url(../assets/img/cappeu\ original\ \(1\)\ \(1\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+  position: relative;
+  
+  
+
+  
+  
 }
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .projects-section {
@@ -11144,7 +11157,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/pexels-pixabay-326333\ -\ Atalho.lnk");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url(../assets/img/serralheiro.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11214,4 +11227,6 @@ div {
 
 
 
-
+.cappeu {
+  text-align: left;
+}
